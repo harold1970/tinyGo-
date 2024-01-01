@@ -7,7 +7,7 @@ import (
 
 func main() {
 	
-	led := machine.PB02
+	led := machine.PC24
 	led.configure(machine.PinConfig{Mode: machine.PinOutput})
 	for {
 		Led.Low()
@@ -15,7 +15,13 @@ func main() {
 		hello()
 		newWord()
 		world()
- 	    } 
+ 		newWord()
+		newWord()
+		newWord()
+
+
+
+	} 
 
 	println("hello world")
 	
